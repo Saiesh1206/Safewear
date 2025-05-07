@@ -197,7 +197,8 @@ def main_dashboard():
             st.download_button("⬇️ Download Worker 1 Data", data=csv, file_name="worker1_data.csv", mime="text/csv")
 
             time.sleep(1)
-            st.experimental_rerun()
+            st.rerun()
+
 
         else:
             st.error("⚠️ Could not fetch data from ThingSpeak. Please check your API or network.")
