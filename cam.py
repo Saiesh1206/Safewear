@@ -164,7 +164,7 @@ def main_dashboard():
             st.subheader("📹 Live ESP32-CAM Image Stream")
             image = fetch_cam_image(ESP32_CAM_URL)
             if image:
-                st.image(image, use_column_width=True)
+                st.image(image, use_container_width=True)
             else:
                 st.warning("🚫 ESP32-CAM Deactivated or Not Reachable!")
 
@@ -198,7 +198,6 @@ def main_dashboard():
 
             time.sleep(1)
             st.rerun()
-
 
         else:
             st.error("⚠️ Could not fetch data from ThingSpeak. Please check your API or network.")
