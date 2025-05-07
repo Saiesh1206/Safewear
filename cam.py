@@ -256,7 +256,7 @@ def main_dashboard():
         csv = df.to_csv(index=False).encode("utf-8")
         st.download_button("⬇️ Download Worker 2 Data", data=csv, file_name="worker2_data.csv", mime="text/csv")
 
-        time.sleep(1)
+        time.sleep(10)
         st.rerun()
 
 
