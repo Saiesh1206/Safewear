@@ -9,7 +9,7 @@ from io import BytesIO
 
 # Configuration
 USERNAME = "admin"
-PASSWORD = "1234"
+PASSWORD = "password123"
 
 # URLs
 CHANNEL1_API_URL = "https://api.thingspeak.com/channels/2695368/feeds.json?results=1"
@@ -40,7 +40,8 @@ def login_page():
             st.session_state.logged_in = True
             st.success("✅ Logged in successfully!")
             time.sleep(1)
-            st.experimental_rerun()
+            st.rerun()
+
         else:
             st.error("❌ Invalid username or password!")
 
@@ -256,7 +257,8 @@ def main_dashboard():
         st.download_button("⬇️ Download Worker 2 Data", data=csv, file_name="worker2_data.csv", mime="text/csv")
 
         time.sleep(1)
-        st.experimental_rerun()
+        st.rerun()
+
 
 # Login validation
 if st.session_state.logged_in:
