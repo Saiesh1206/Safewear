@@ -1,0 +1,11 @@
+streamlit 
+
+pandas
+
+requests
+
+plotly 
+
+Pillow
+
+
