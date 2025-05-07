@@ -14,7 +14,7 @@ PASSWORD = "password123"
 # URLs
 CHANNEL1_API_URL = "https://api.thingspeak.com/channels/2695368/feeds.json?results=1"
 CHANNEL2_API_URL = "https://api.thingspeak.com/channels/2844558/feeds.json?results=1"
-ESP32_CAM_URL = "http://172.20.10.2/capture"  # Replace with your actual ESP32-CAM stream URL for capturing images
+ESP32_CAM_URL = "http://172.20.10.3/capture"  # Replace with your actual ESP32-CAM stream URL for capturing images
 
 # Thresholds
 GAS_THRESHOLD = 300
